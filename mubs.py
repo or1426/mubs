@@ -48,7 +48,7 @@ def delta(a,b):
         
 for _ in range(1000):
     i, j, = np.random.randint(0,33, 2)
-    k, l, = np.random.randint(0,31, 2)
+    k, l, = np.random.randint(0,32, 2)
 
     d = 1/N + delta(i,j)*(delta(k,l) - 1/N)
     a = abs(np.vdot(basisVec[i,k], basisVec[j,l]))**2
